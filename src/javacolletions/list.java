@@ -2,6 +2,7 @@ package javacolletions;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class list {
@@ -40,9 +41,21 @@ public class list {
         //retorna true se a lista estiver vazia
         listaDeNomes.isEmpty();
         
+        //foreach
+        for(String nomeDoItem: listaDeNomes ){
+            System.out.println(nomeDoItem);
+        }
+        //iterator
+        Iterator<String> interação = listaDeNomes.iterator();
+        while (interação.hasNext()) {
+            System.out.println(interação.next());
+            
+        }
+        
         //limpando uma lista
         listaDeNomes.clear();
         System.out.println(listaDeNomes.isEmpty());
+        
     }
     
 }
