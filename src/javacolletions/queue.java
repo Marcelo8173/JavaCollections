@@ -30,6 +30,6 @@ public class queue {
         System.out.println(filaDeBanco);
         
         filaDeBanco.clear();
-            System.out.println(filaDeBanco.element());
+            System.out.println(filaDeBanco.element());// gera um erro
     }
 }
