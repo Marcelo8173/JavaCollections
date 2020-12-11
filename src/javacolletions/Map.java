@@ -6,6 +6,7 @@
 package javacolletions;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  *
@@ -46,5 +47,7 @@ public class Map {
         for (String arg : vencedoresDoMundialDaFifa.keySet()) {
             System.out.println(arg);
         }
+        
+//        HashMap<String, List<Integer> dados = new HashMap<>();
     }
 }
