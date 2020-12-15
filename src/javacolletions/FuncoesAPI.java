@@ -6,6 +6,7 @@
 package javacolletions;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 /**
  *
  * @author marcelo
@@ -27,6 +28,25 @@ public class FuncoesAPI {
         Predicate<String> estaVazio = valor -> valor.isEmpty();
         System.out.println(estaVazio.test("a"));
         System.out.println(estaVazio.test(""));
+        
+//        Supliers
+        Supplier<Person> sup = () -> new Person();
+        System.out.println(sup.get());
 
+    }
+    
+}
+
+class Person {
+    private String nome;
+    private Integer idade;
+    
+    public  Person(){
+        nome = "joao";
+        idade = 23;
+    }
+    
+    public String ToString(){
+        return String.format(nome, idade);
     }
 }
